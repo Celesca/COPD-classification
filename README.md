@@ -1,3 +1,5 @@
+# LungSoundVexNet : COPD Classification
+
 For the datasets we gathered from here : https://www.kaggle.com/datasets/vbookshelf/respiratory-sound-database?resource=download
 
 And the reference code from Kaggles :
