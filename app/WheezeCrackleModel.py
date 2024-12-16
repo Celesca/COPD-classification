@@ -8,7 +8,7 @@ class WheezeCrackleModel:
         self.w_model = load_model('models/Wheeze_LSTM.h5')
         self.model = load_model('models/Crackle_LSTM.h5')
 
-    def wheezes_crackels_detection(self,audio_path):
+    def wheezes_crackels_detection(self, audio_path):
         w_classes = ["Wheezes", "No Wheezes"]
         c_classes = ["Crackles", "No Crackles"]
 
