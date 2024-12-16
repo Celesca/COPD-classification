@@ -8,11 +8,17 @@ For the datasets we gathered from here : https://www.kaggle.com/datasets/vbooksh
 
 And the reference code from Kaggles :
 
-The classification using the respiratory sound
+The classification using the respiratory sound :
+
 https://www.kaggle.com/code/mohibovais/lung-disease-detection-using-respiratory-sound
 
-The classification of the Wheeze and Crackles sound
+The classification of the Wheeze and Crackles sound :
+
 https://www.kaggle.com/code/eatmygoose/cnn-detection-of-wheezes-and-crackles
+
+another wheeze and crackle classification notebook :
+
+https://www.kaggle.com/code/monkeypox2022/wheeze-crackles-detection#Evaluate-Model
 
 The reference Paper code are here : 
 
