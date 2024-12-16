@@ -14,7 +14,10 @@ https://www.kaggle.com/code/mohibovais/lung-disease-detection-using-respiratory-
 The classification of the Wheeze and Crackles sound
 https://www.kaggle.com/code/eatmygoose/cnn-detection-of-wheezes-and-crackles
 
-The reference Paper code are here : https://github.com/kaen2891/bts
+The reference Paper code are here : 
 
+SOTA : https://github.com/kaen2891/bts
+
+Paper of Wheeze and Crackles : https://www.nature.com/articles/s41598-021-96724-7
 
 
