@@ -26,5 +26,4 @@ class WheezeCrackleModel:
         c_classpreds = c_classes[np.argmax(c_pred, axis=1)[0]]
         c_confidence = c_pred.T[c_pred.mean(axis=0).argmax()].mean()
 
-        print (w_classpreds, w_confidence)
-        print (c_classpreds, c_confidence)
+        return w_classpreds, w_confidence, c_classpreds, c_confidence
