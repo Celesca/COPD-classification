@@ -20,4 +20,7 @@ SOTA : https://github.com/kaen2891/bts
 
 Paper of Wheeze and Crackles : https://www.nature.com/articles/s41598-021-96724-7
 
+Real-time counting of wheezing events from lung sounds using deep learning algorithms: Implications for disease prediction and early intervention 
+
+https://pmc.ncbi.nlm.nih.gov/articles/PMC10659186/
 
