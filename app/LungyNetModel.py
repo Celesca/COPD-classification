@@ -30,3 +30,5 @@ class LungyNetModel:
         prediction = self.model.predict(preprocessed_audio)
         predicted_class = np.argmax(prediction, axis=1)
         return self.classes[predicted_class[0]]
+    
+    
