@@ -1,12 +1,33 @@
 import { Search } from 'lucide-react';
+import { useState } from 'react';
 
 const HomePage = () => {
+
+  const [isModalVisible, setIsModalVisible] = useState(false);
+
+  const toggleModal = () => {
+    setIsModalVisible(!isModalVisible);
+  };
+
   return (
     <div className="min-h-screen bg-white">
+
+      {isModalVisible && (
+              <div className="fixed top-0 right-0 w-1/3 h-full bg-white shadow-lg z-50">
+                <button onClick={toggleModal} className="absolute top-4 right-4">Close</button>
+                <div className="p-4">
+                  <h2>Profile Details</h2>
+                  {/* Add your modal content here */}
+                </div>
+              </div>
+            )}
+
       {/* Top Blue Section */}
       <div className="bg-[#7CC5D5] rounded-b-3xl p-6 relative h-40">
         <div className="absolute top-4 right-4">
-          <div className="w-8 h-8 bg-gray-200 rounded-full"></div>
+            <div id="profile" className="w-8 h-8 bg-gray-200 rounded-full" onClick={toggleModal}>
+              <img src='https://randomuser.me/api/portraits' alt="Profile" />
+            </div>
         </div>
         <h1 className="text-white text-xl mt-8">ยินดีต้อนรับ!</h1>
         
