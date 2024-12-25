@@ -5,7 +5,7 @@ import tensorflow as tf
 
 class LungyNetModel:
     def __init__(self):
-        self.model = load_model('models/LungyNet.h5')
+        self.model = load_model('models/mymodel3_102.keras')
         self.classes = ['Healthy', 'COPD']
 
     def preprocessing(self, audio_file, mode):
