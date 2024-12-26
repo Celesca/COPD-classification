@@ -52,7 +52,7 @@ const HomePage = () => {
       )}
 
       {/* Top Blue Section */}
-      <div className="bg-[#7CC5D5] rounded-b-3xl p-6 relative h-40">
+      <div className="bg-[#42A4C3] rounded-b-3xl p-6 relative h-40">
         <div className="absolute top-4 right-4">
           {/* Profile Click */}
           <div 
@@ -66,7 +66,7 @@ const HomePage = () => {
         <h1 className="text-white text-xl mt-8">ยินดีต้อนรับ!</h1>
         
         {/* Search Bar */}
-        <div className="relative mt-4">
+        <div className="relative mt-12">
           <input
             type="text"
             placeholder="ค้นหา"
@@ -77,8 +77,8 @@ const HomePage = () => {
       </div>
 
       {/* Content Section */}
-      <div className="px-6 mt-6">
-        <h2 className="text-sm text-gray-600 mb-4">แบบประเมินเบื้องต้น *</h2>
+      <div className="px-6 mt-16">
+      
         
         {/* Cards Grid */}
         <div className="grid grid-cols-2 gap-4">
