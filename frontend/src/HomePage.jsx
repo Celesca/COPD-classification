@@ -84,10 +84,10 @@ const HomePage = () => {
         <div className="px-6 mt-16">
           {/* Diagnosis Card */}
           <div>
-            <div className="bg-gradient-to-br from-white to-[#A6E9D5] p-4 rounded-xl h-32 hover:cursor-pointer hover:shadow-md transition-shadow duration-200 overflow-hidden">
-          <h1 className="text-lg">แบบประเมินเบื้องต้น <span className="text-red-500">*</span></h1>
+            <div className="bg-gradient-to-br from-white to-[#A6E9D5] p-4 rounded-xl h-36 hover:cursor-pointer hover:shadow-md transition-shadow duration-200 overflow-hidden">
+          <h1 className="text-lg pt-2">แบบประเมินเบื้องต้น <span className="text-red-500">*</span></h1>
           <div className="flex justify-end">
-            <img className="w-32 -rotate-12 object-contain" src="/airsa.png" alt="Diagnosis"></img>
+            <img className="w-40 -rotate-12 object-contain" src="/airsa.png" alt="Diagnosis"></img>
           </div>
             </div>
           </div>
