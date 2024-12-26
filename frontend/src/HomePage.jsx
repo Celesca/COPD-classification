@@ -81,18 +81,18 @@ const HomePage = () => {
       </div>
 
       {/* Content Section */}
-      <div className="px-6 mt-16">
-        {/* Diagnosis Card */}
-        <div>
-          <div className="bg-gradient-to-br from-white to-[#A6E9D5] p-4 rounded-xl h-32 hover:cursor-pointer hover:shadow-md transition-shadow duration-200">
-            <h1 className="text-lg">แบบประเมินเบื้องต้น <span className="text-red-500">*</span></h1>
-            <div className="flex justify-end">
-              <img className="w-32" src="/airsa.png"></img>
+        <div className="px-6 mt-16">
+          {/* Diagnosis Card */}
+          <div>
+            <div className="bg-gradient-to-br from-white to-[#A6E9D5] p-4 rounded-xl h-32 hover:cursor-pointer hover:shadow-md transition-shadow duration-200 overflow-hidden">
+          <h1 className="text-lg">แบบประเมินเบื้องต้น <span className="text-red-500">*</span></h1>
+          <div className="flex justify-end">
+            <img className="w-32 -rotate-12 object-contain" src="/airsa.png" alt="Diagnosis"></img>
+          </div>
             </div>
           </div>
-        </div>
 
-        {/* Cards Grid */}
+          {/* Cards Grid */}
         <div className="grid grid-cols-2 gap-4">
           {/* Lungs Assessment Card */}
           <div className="bg-gradient-to-br from-teal-50 to-teal-100 p-4 rounded-xl h-32 flex items-center justify-center hover:shadow-md transition-shadow duration-200">
