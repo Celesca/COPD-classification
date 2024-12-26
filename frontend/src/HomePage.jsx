@@ -3,7 +3,6 @@ import { useState } from 'react';
 import './HomePage.css';
 
 const HomePage = () => {
-
   const [isModalVisible, setIsModalVisible] = useState(false);
 
   const toggleModal = () => {
@@ -12,24 +11,56 @@ const HomePage = () => {
 
   return (
     <div className="min-h-screen bg-white">
+      {/* Modal/Sidebar */}
+      <div 
+        className={`fixed top-0 right-0 w-1/3 h-full bg-white shadow-lg z-50 transform transition-transform duration-300 ease-in-out ${
+          isModalVisible ? 'translate-x-0' : 'translate-x-full'
+        }`}
+      >
+        <div className="relative w-full h-full">
+          <button 
+            onClick={toggleModal} 
+            className="absolute top-4 right-4 p-2 hover:bg-gray-100 rounded-full transition-colors duration-200"
+          >
+            <svg 
+              className="w-6 h-6" 
+              fill="none" 
+              stroke="currentColor" 
+              viewBox="0 0 24 24"
+            >
+              <path 
+                strokeLinecap="round" 
+                strokeLinejoin="round" 
+                strokeWidth={2} 
+                d="M6 18L18 6M6 6l12 12" 
+              />
+            </svg>
+          </button>
+          <div className="p-6">
+            <h2 className="text-xl font-semibold mb-4">Profile Details</h2>
+            {/* Add your modal content here */}
+          </div>
+        </div>
+      </div>
 
-    {isModalVisible && (
-            <div className={`fixed top-0 right-0 w-1/3 h-full bg-white shadow-lg z-50 transition-transform duration-300 ${isModalVisible ? 'translate-x-0' : 'translate-x-full'}`}>
-              <button onClick={toggleModal} className="absolute top-4 right-4">Close</button>
-              <div className="p-4">
-                <h2>Profile Details</h2>
-                {/* Add your modal content here */}
-              </div>
-            </div>
-          )}
+      {/* Overlay */}
+      {isModalVisible && (
+        <div 
+          className="fixed inset-0 bg-black bg-opacity-50 z-40 transition-opacity duration-300"
+          onClick={toggleModal}
+        />
+      )}
 
- {/* Top Blue Section */}
- <div className="bg-[#7CC5D5] rounded-b-3xl p-6 relative h-40">
+      {/* Top Blue Section */}
+      <div className="bg-[#7CC5D5] rounded-b-3xl p-6 relative h-40">
         <div className="absolute top-4 right-4">
-
           {/* Profile Click */}
-          <div id="profile" className="w-8 h-8 bg-gray-200 rounded-full hover:cursor-pointer" onClick={toggleModal}>
-            <img src='https://randomuser.me/api/portraits' alt="Profile" />
+          <div 
+            id="profile" 
+            className="w-8 h-8 bg-gray-200 rounded-full hover:cursor-pointer hover:ring-2 hover:ring-white transition-all duration-200" 
+            onClick={toggleModal}
+          >
+            <img src='https://randomuser.me/api/portraits' alt="Profile" className="w-full h-full rounded-full" />
           </div>
         </div>
         <h1 className="text-white text-xl mt-8">ยินดีต้อนรับ!</h1>
@@ -39,7 +70,7 @@ const HomePage = () => {
           <input
             type="text"
             placeholder="ค้นหา"
-            className="w-full p-3 rounded-lg bg-white shadow-sm"
+            className="w-full p-3 rounded-lg bg-white shadow-sm focus:ring-2 focus:ring-blue-200 focus:outline-none transition-all duration-200"
           />
           <Search className="absolute right-3 top-3 text-gray-400" size={20} />
         </div>
@@ -52,7 +83,7 @@ const HomePage = () => {
         {/* Cards Grid */}
         <div className="grid grid-cols-2 gap-4">
           {/* Lungs Assessment Card */}
-          <div className="bg-gradient-to-br from-teal-50 to-teal-100 p-4 rounded-xl h-32 flex items-center justify-center">
+          <div className="bg-gradient-to-br from-teal-50 to-teal-100 p-4 rounded-xl h-32 flex items-center justify-center hover:shadow-md transition-shadow duration-200">
             <div className="w-16 h-16">
               <svg viewBox="0 0 24 24" className="w-full h-full text-teal-600">
                 <path
@@ -64,7 +95,7 @@ const HomePage = () => {
           </div>
 
           {/* Chat Bot Card */}
-          <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-4 rounded-xl h-32 flex items-center justify-center">
+          <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-4 rounded-xl h-32 flex items-center justify-center hover:shadow-md transition-shadow duration-200">
             <div className="w-16 h-16">
               <svg viewBox="0 0 24 24" className="w-full h-full text-blue-600">
                 <path
@@ -76,7 +107,7 @@ const HomePage = () => {
           </div>
 
           {/* Assessment Results Card */}
-          <div className="bg-gradient-to-br from-orange-50 to-orange-100 p-4 rounded-xl h-32 flex items-center justify-center">
+          <div className="bg-gradient-to-br from-orange-50 to-orange-100 p-4 rounded-xl h-32 flex items-center justify-center hover:shadow-md transition-shadow duration-200">
             <div className="w-16 h-16">
               <svg viewBox="0 0 24 24" className="w-full h-full text-orange-600">
                 <path
